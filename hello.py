@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello():
     return 'hello world'
 
-@app.route('/item/<id>')
+@app.route('/item/<id>/')
 def item(id):
     return 'item: {}'.format(id)
 
